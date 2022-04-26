@@ -14,11 +14,10 @@ parser.add_argument('filename', help='the file to read')
 args = parser.parse_args()
 
 # does the file exist?
-infile_exists = os.path.exists(args.filename)
+filename_exists = os.path.exists(args.filename)
 
 # make sure the file is an ascii text file
-# if it is, proceed
-if infile_exists is False:
+if file_exists is False:
     print("Error: The input file doesn't exist.")
     sys.exit(1)
 
