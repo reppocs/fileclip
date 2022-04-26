@@ -16,11 +16,11 @@ args = parser.parse_args()
 # does the file exist?
 filename_exists = os.path.exists(args.filename)
 
-# make sure the file is an ascii text file
 if file_exists is False:
     print("Error: The input file doesn't exist.")
     sys.exit(1)
 
+# make sure the file is an ascii text file
 if is_binary(args.filename):
     print("Error: The input file is non-text.")
     sys.exit(1)
