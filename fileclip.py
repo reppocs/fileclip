@@ -16,7 +16,7 @@ args = parser.parse_args()
 # does the file exist?
 filename_exists = os.path.exists(args.filename)
 
-if file_exists is False:
+if filename_exists is False:
     print("Error: The input file doesn't exist.")
     sys.exit(1)
 
